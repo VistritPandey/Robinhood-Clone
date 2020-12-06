@@ -3,8 +3,11 @@ import React from 'react'
 
 function Header() {
     return (
-        <div className="header">
-            <h3>Header </h3>
+        <div className="header__wrapper">
+            {/* Logo */}
+            <div className="header__logo">
+                Hello
+            </div>
         </div>
     )
 }
