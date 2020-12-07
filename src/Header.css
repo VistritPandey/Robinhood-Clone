@@ -6,13 +6,11 @@
 }
 
 .header__search {
-    margin-left: 90px;
-    height: 34px;
+    height: 40px;
     display: flex;
     align-items: center;
     border: 1px solid #333;
     border-radius: 4px;
-    width: 325px;
 }
 
 .header__searchContainer {
