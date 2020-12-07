@@ -1,3 +1,17 @@
 body {
     background-color: black;
 }
+
+.app__body {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.app__container{
+    background-color: blue;
+    width: 1024px;
+    height: 100%;
+    display: flex;
+}
