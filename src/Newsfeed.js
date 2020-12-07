@@ -3,8 +3,10 @@ import './Newsfeed.css'
 
 function NewsFeed() {
     return (
-        <div>
-            
+        <div className="newsfeed">
+            <div className="newsfeed__container">
+                
+            </div>
         </div>
     )
 }
