@@ -39,7 +39,7 @@
 }
 
 .header__logo {
-    padding-left: 48px;
+    padding-left: 42px;
 }
 
 .header__logo img {
@@ -48,6 +48,7 @@
 
 .header__menuItems {
     padding-right: 48px;
+    display: flex;
 }
 
 .header__menuItems a {
