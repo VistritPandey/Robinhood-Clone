@@ -1,5 +1,5 @@
 .newsfeed {
-    background-color: orange;
+    border: 1px solid orange;
     flex: 0.7;
 }
 
