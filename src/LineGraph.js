@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import {Line} from 'react-chartjs-2'
 
 
 function LineGraph() {
 
+    const [ graphData, setGraphData] = useState([])
     const data = 
     [{
         x: 10,
@@ -12,6 +13,22 @@ function LineGraph() {
         x: 15,
         y: 10
     }]
+
+    const createMockData = () => {
+        let data = []
+        let value = 50
+        for (var i=0; i<366; i++) {
+            let date = new Date()
+            date.setHours(0,0,0,0)
+            date.setDate(i)
+            value += Math.round((Math.random() < 0.5 ? 1 : 0) * Math.random()*10)
+            data.push({x: date, y: value})
+        }
+    }
+
+    useEffect(() => {
+
+    }, [])
 
     return (
         <div className="linegraph">
@@ -36,6 +53,10 @@ function LineGraph() {
                 options = {{
                     legend : {
                         display: false
+                    },
+                    tooltips : {
+                        mode: "index",
+                        intersect: false
                     },
                     scales: {
                         yAxes: [{
