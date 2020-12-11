@@ -1,5 +1,4 @@
 .newsfeed {
-    
     flex: 0.7;
     color: white;
 }
@@ -14,4 +13,13 @@
 
 .newsfeed__portfolio p {
     margin-top: 0;
+}
+
+.newsfeed__chart {
+    width: 100%;
+}
+
+.newfeed__chartSection {
+    display: flex;
+    flex-direction: column;
 }
