@@ -11,3 +11,7 @@
 .newsfeed__portfolio h1 {
     margin: 0;
 }
+
+.newsfeed__portfolio p {
+    margin-top: 0;
+}

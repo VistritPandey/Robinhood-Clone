@@ -13,4 +13,6 @@ body {
     width: 1024px;
     height: 100%;
     display: flex;
+    padding-left: 48px;
+    padding-right: 48px;
 }
