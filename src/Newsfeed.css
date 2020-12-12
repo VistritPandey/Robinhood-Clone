@@ -20,6 +20,14 @@
   margin-bottom: 60px;
 }
 
+.newsfeed__price__asset > h1 {
+  color: azure;
+}
+
+.newsfeed__price__asset > p {
+  color: azure;
+}
+
 .newsfeed__market__section {
  margin: 12px 0;
  padding: 0;
