@@ -1,16 +1,18 @@
+
 .header {
     display: flex;
     padding: 8px;
     align-items: center;
     justify-content: space-between;
 }
-
 .header__search {
-    height: 40px;
+    margin-left: 90px;
+    height: 34px;
     display: flex;
     align-items: center;
     border: 1px solid #333;
     border-radius: 4px;
+    width: 325px;
 }
 
 .header__searchContainer {
@@ -36,26 +38,21 @@
     color: #333;
 }
 
-.header__logo {
-    padding-left: 42px;
+.Header-logo {
+    padding-left: 48px;
 }
 
-.header__logo img {
+.Header-logo img {
     height: 30px;
 }
 
-.header__menuItems {
+.Header-links {
     padding-right: 48px;
-    display: flex;
 }
 
-.header__menuItems a {
+.Header-links a {
     color: white;
     padding: 0 10px;
     text-decoration: none;
     font-weight: bold;
-}
-
-.header__menuItems a:hover {
-    color: #51C53B;
 }

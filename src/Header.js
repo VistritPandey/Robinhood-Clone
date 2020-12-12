@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="header">
             
-            <div className="header__logo">
+            <div className="Header-logo">
                 <img src={Logo} width={25} />
             </div>
             <div className="header__search">
@@ -16,7 +16,7 @@ function Header() {
                     <input placeholder="Search" type="text" />
                 </div>
             </div>
-            <div className="header__menuItems">
+            <div className="Header-links">
                 <a href="#" >Free Stocks</a>
                 <a href="#" >Portfolio</a>
                 <a href="#">Cash</a>
