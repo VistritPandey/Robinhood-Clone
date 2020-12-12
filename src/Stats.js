@@ -17,8 +17,28 @@ function Stats() {
     }
 
     useEffect(() => {
+        let testData = []
+        const stocksList = ["AAPL" , "MSFT", "TSLA", "FB", "BABA", "UBER", "DIS", "SBUX"];
+        let promises = [];
+        stocksList.map((stock) => {
+            promises.push(
+                getStockData(stock)
+                .then((res) => {
+                    testData.push({
+                        name: stock,
+                        ...res.data
+                    });
+                })
+            )
+        });
 
+        Promise.all(promises).then(()=>{
+            console.log(testData);
+            setstockData(testData);
+        })
     }, [])
+
+
     return (
         <div className="stats">
             <div className="stats__container">
