@@ -11,8 +11,8 @@ const firebaseConfig = {
     measurementId: "G-PGSXENXSDK"
   };
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig)
+  let firebaseApp = firebase.initializeApp(firebaseConfig)
 
-  const db = firebaseApp.firestore();
+const db = firebaseApp.firestore()
 
-  export { db };
+export {db}

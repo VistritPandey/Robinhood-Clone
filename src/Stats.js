@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Stats.css'
 import axios from 'axios'
 import StatsRow from './StatsRow'
-import db from './firebase';
+import {db} from './firebase';
 
 const TOKEN = "bva7pa748v6us1m9hse0";
 const BASE_URL = "https://finnhub.io/api/v1/quote"
