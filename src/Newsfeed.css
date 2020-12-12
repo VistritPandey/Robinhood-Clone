@@ -1,0 +1,153 @@
+.newsfeed {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+.newsfeed__container {
+  flex: 1;
+  background-color: black;
+  font-size: 12px;
+}
+
+
+.newsfeed__buying__section {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #3b4754;
+  padding: 20px 0px 20px 0px;
+  margin-bottom: 60px;
+}
+
+.newsfeed__market__section {
+ margin: 12px 0;
+ padding: 0;
+ margin-bottom: 60px;
+}
+
+.newsfeed__market__box {
+ height: 10vh; 
+ padding: 20px;
+ border: 1px solid #31363a;
+ border-radius: 4px;
+}
+
+.newsfeed__market__box p {
+  color: #7b858a;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.newsfeed__popularlists__section {
+ height: fit-content;
+ padding-bottom: 20px;
+}
+
+.newsfeed__popularlists__intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.newsfeed__popularlists__intro > p {
+  font-weight: bold;
+  color: #fff;
+}
+
+.newsfeed__popularlists__intro > p:hover {
+  cursor: pointer;
+  color: #5ac53b;
+  border-bottom: 1px solid #5ac53b;
+}
+
+.newsfeed__popularlists__badges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.newsfeed__popularlists__badges .topic__badge {
+  border: 1px solid #31363a;
+  background-color: black;
+  color: white;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.newsfeed__articles__section {
+  background-color: black;
+}
+
+.newsfeed__articles__header {
+  padding: 20px 0px 10px 0px;
+  border-bottom: 1px solid #3b4754;
+}
+
+.newsfeed__articles {
+  flex-direction: column;
+}
+
+.newsfeed__article__title {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 10px 0px;
+}
+
+.newsfeed__article__source {
+  font-weight: bold;
+  flex: 1;
+}
+
+.news__article__content {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3b4754;
+}
+
+.newsfeed__topmovers__section {
+  padding: 20px 0px 10px 0px;
+  background-color: black;
+  height: fit-content;
+}
+
+.newsfeed__topmovers__intro__details {
+  display: flex;
+  justify-content: space-between;
+  color: darkgrey;
+}
+
+.newsfeed__topmovers__intro__details p:nth-child(2) {
+  font-weight: bold;
+  color: orange;
+}
+
+.newsfeed__topmovers__cards__container {
+  background-color: black;
+  justify-content: space-evenly;
+  padding: 20px 20px 20px 0px;
+  display: flex;
+}
+
+.newsfeed__topmovers__card {
+  background-color: black;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  margin-left: 12px;
+  width: 90px;
+  height: 120px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.newsfeed__topmovers__card__numbers {
+  color: #66ff00;
+}

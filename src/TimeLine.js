@@ -1,9 +1,9 @@
 import React from 'react';
-import './TimeLine.scss'
+import './TimeLine.css'
 
 const TimeLine = () => {
   return (
-    <div className={'timeline__container'}>
+    <div className='timeline__container'>
         <div className="timeline__button">LIVE</div>
         <div className="timeline__button">1D</div>
         <div className="timeline__button active">1W</div>
