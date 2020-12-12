@@ -41,6 +41,13 @@
   margin-bottom: 8px;
 }
 
+.newsfeed__market__box h1 {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
 .newsfeed__popularlists__section {
  height: fit-content;
  padding-bottom: 20px;
