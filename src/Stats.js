@@ -21,17 +21,31 @@ function Stats() {
     }
 
     const getMyStocks = () => {
-        db
-        .collecton('myStocks')
-        .onSnapshot(snapshot => {
-            console.log(snapshot)
-        })
-    }
+        db.collection('myStocks')
+          .onSnapshot(snapshot => {
+            let promises = []
+            let tempData = []
+            snapshot.docs.map((doc)=> {
+              promises.push(getStockData(doc.data().ticker)
+                .then(res => {
+                  tempData.push({
+                    id:doc.id,
+                    data:doc.data(),
+                    info:res.data
+                  })
+                })
+              )})
+            Promise.all(promises).then(()=>{
+              setMyStocks(tempData)
+            })
+          })
+      }
 
     useEffect(() => {
         let testData = []
         const stocksList = ["AAPL" , "MSFT", "TSLA", "FB", "BABA", "UBER", "DIS", "SBUX"];
         let promises = [];
+        getMyStocks()
         stocksList.map((stock) => {
             promises.push(
                 getStockData(stock)
@@ -45,7 +59,6 @@ function Stats() {
         });
 
         Promise.all(promises).then(()=>{
-            console.log(testData);
             setstockData(testData);
         })
     }, [])
@@ -59,7 +72,15 @@ function Stats() {
                 </div>
                 <div className="stats__content">
                     <div className="stats__rows">
-                       
+                        {myStocks.map((stock)=>(
+                            <StatsRow
+                                key={stock.data.ticker}
+                                name={stock.data.ticker}
+                                openPrice={stock.info.o}
+                                shares={stock.data.shares}
+                                price={stock.info.c}
+                            />
+                ))}
                     </div>
                 </div>
                 <div className="stats__header">
@@ -69,10 +90,10 @@ function Stats() {
                     <div className="stats__rows">
                         {stockData.map((stock)=> (
                                 <StatsRow 
-                                key={stock.name}
-                                name={stock.name}
-                                openPrice={stock.o}
-                                price={stock.c}
+                                    key={stock.name}
+                                    name={stock.name}
+                                    openPrice={stock.o}
+                                    price={stock.c}
                                 />
                             ))}
                     </div>
