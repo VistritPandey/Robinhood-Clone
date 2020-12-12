@@ -65,6 +65,11 @@
   color: #fff;
 }
 
+.newsfeed__popularlists__intro > h1 {
+  font-weight: bold;
+  color: #fff;
+}
+
 .newsfeed__popularlists__intro > p:hover {
   cursor: pointer;
   color: #5ac53b;
@@ -157,4 +162,8 @@
 
 .newsfeed__topmovers__card__numbers {
   color: #66ff00;
+}
+
+.newsfeed__buying__section h2 {
+  color: azure;
 }
